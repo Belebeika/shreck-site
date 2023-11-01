@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url(https://lh3.googleusercontent.com/pw/ACtC-3eYKEnL-pUFhF9aCKHKKRNrWEyJJ-7SCD8-EJLpBkVKp6jIHEKvBGiOL0hPW5f6UAcyoxaR06XRDUayk0NaQMxpSWCjnNyqdypHsIzrPfSwQZmOBR4-i3VCc0Ywg9CUmFYv2vs-rbmEmio2-4ZUuokZ=w1384-h791-no);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.shreck{
+    background-image: url('images/gratis-png-shrek.png');
+    background-size: cover;
+    width: 450px;
+    height: 600px;
+    margin: 0 auto;
+}
