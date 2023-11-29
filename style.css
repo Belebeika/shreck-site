@@ -1,17 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background: url(https://lh3.googleusercontent.com/pw/ACtC-3eYKEnL-pUFhF9aCKHKKRNrWEyJJ-7SCD8-EJLpBkVKp6jIHEKvBGiOL0hPW5f6UAcyoxaR06XRDUayk0NaQMxpSWCjnNyqdypHsIzrPfSwQZmOBR4-i3VCc0Ywg9CUmFYv2vs-rbmEmio2-4ZUuokZ=w1384-h791-no);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 100px 0;
+    overflow: hidden;
 }
 
-.shreck{
-    background-image: url('images/gratis-png-shrek.png');
+.container {
+    width: 100%;
+    height: 100vh;
+    background: black;
     background-size: cover;
-    width: 450px;
-    height: 600px;
-    margin: 0 auto;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    padding: 10px 35px;
+    color: black;
+    background-color: rgb(86, 154, 178);
+    border: 2px solid rgb(17, 5, 91);
+    border-radius: 25px;
+    user-select: none;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.button:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.star {
+    width: 78px;
+    height: 72px;
+    background-size: 78px 72px;
+    position: relative;
+    top: -200px;
+    animation: stardown 6s infinite linear;
+}
+
+.star:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+@keyframes stardown {
+    0%{
+        top: -200px;
+        transform: rotate(0deg);
+    }
+    100%{
+        top: 900px;
+        transform: rotate(360deg);
+    }
 }
