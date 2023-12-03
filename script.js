@@ -16,8 +16,11 @@ function CreateContainers(){
         let div1 = document.createElement('div');
         div1.className = cont;
         div1.style.display = 'flex';
-        div1.style.width = '78px';
+        div1.style.width = '5vw';
         window.innerHTML += div1.outerHTML;
+        if (i == 16){
+            div1.style.margin = 'bottom';
+        }
     }
 }
 
@@ -29,13 +32,13 @@ function randomInteger(min, max) {
 function randomPosition(){
     let C = 0;
     while (true){
-        C = randomInteger(650, 1400) - (cnst - 1) * 78;
-        if (C < cnst_left - 200 || C > cnst_left + 200){
+        C = randomInteger(41, 90) - (cnst - 1) * 5;
+        if (C < cnst_left - 13 || C > cnst_left + 13){
             break;
         }
     }
     cnst_left = C;
-    return String(C) + 'px'
+    return String(C) + 'vw'
 }
 
 function randomImage(){
@@ -99,52 +102,65 @@ function get_Ryan(background){
     if (background == 'url("images/black-star.png")'){
         myAudio.src = 'audio/black_gosling.mp3';
         div.src = "images/black-gosling.png";
-        div.style.left = '-1120px';
+        div.style.left = '-72vw';
+        div.style.width = '50vw';
+        div.style.height = '100vh';
     }
 
     if (background == 'url("images/blue-star.png")'){
         myAudio.src = 'audio/blue_gosling.mp3';
         div.src = "images/blue-gosling.png";
-        div.style.left = '-1070px';
+        div.style.left = '-70vw';
+        div.style.width = '50vw';
+        div.style.height = '100vh';
     }
 
     if (background == 'url("images/white-star.png")'){
-        myAudio.src = '';
+        myAudio.src = 'audio/white_gosling.mp3';
         div.src = "images/white-gosling.png";
-        div.style.left = '-1120px';
+        div.style.left = '-72vw';
+        div.style.width = '50vw';
+        div.style.height = '100vh';
     }
 
     if (background == 'url("images/army-star.png")'){
-        myAudio.src = '';
         myAudio.src = 'audio/army_gosling.mp3';
         div.src = "images/army-gosling.png";
-        div.style.left = '-1090px';
+        div.style.left = '-70vw';
+        div.style.width = '50vw';
+        div.style.height = '100vh';
     }
 
     if (background == 'url("images/orange-star.png")'){
         myAudio.src = 'audio/orange_gosling.mp3';
         div.src = "images/orange-gosling.png";
-        div.style.left = '-1120px';
+        div.style.left = '-72vw';
+        div.style.width = '50vw';
+        div.style.height = '100vh';
     }
 
     if (background == 'url("images/light-blue-star.png")'){
-        myAudio.src = '';
+        myAudio.src = 'audio/light_blue_gosling.mp3';
         div.src = "images/light-blue-gosling.png";
-        div.style.left = '-1120px';
+        div.style.left = '-72vw';
+        div.style.width = '50vw';
+        div.style.height = '100vh';
     }
 
     if (background == 'url("images/star.png")'){
         myAudio.src = 'audio/shreck.mp3';
         div.src = "images/cool-shreck.png";
-        div.style.left = '-1170px';
-        div.style.width = '640px';
-        div.style.height = '640px';
-        div.style.bottom = '-107.2px';
+        div.style.left = '-75vw';
+        div.style.width = '50vw';
+        div.style.height = '80vh';
+        div.style.bottom = '-20vh';
     }
     if (background == 'url("images/pink-star.png")'){
-        myAudio.src = '';
+        myAudio.src = 'audio/pink_gosling.mp3';
         div.src = "images/pink-gosling.png";
-        div.style.left = '-1120px';
+        div.style.left = '-72vw';
+        div.style.width = '50vw';
+        div.style.height = '100vh';
     }
 
     myAudio.play();
