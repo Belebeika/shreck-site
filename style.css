@@ -32,11 +32,10 @@ body {
 }
 
 .star {
-    width: 78px;
-    height: 72px;
-    background-size: 78px 72px;
+    width: 5vw;
+    height: 4.6vw;
+    background-size: 5vw 4.6vw;
     position: relative;
-    top: -200px;
     animation: stardown 6s infinite linear;
 }
 
@@ -47,11 +46,11 @@ body {
 
 @keyframes stardown {
     0%{
-        top: -200px;
+        top: -20vh;
         transform: rotate(0deg);
     }
     100%{
-        top: 900px;
+        top: 120vh;
         transform: rotate(360deg);
     }
 }
